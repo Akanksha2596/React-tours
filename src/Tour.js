@@ -7,8 +7,8 @@ const Tour = ({id,image,info,price,name, removeTour}) => {
                   <img src={image} alt={name}></img>
                   <footer>
                       <div className='tour-info'>
-                          <h4>{name}</h4>
-                          <h4 className='tour-project'>${price}</h4>
+                          <h2>{name}</h2>
+                          <h2 className='tour-project'>${price}</h2>
                       </div>
                       <p>{readMore? info:`${info.substring(0,200)}...`}</p>
                       <button onClick={()=> setReadMore(!readMore)}>
